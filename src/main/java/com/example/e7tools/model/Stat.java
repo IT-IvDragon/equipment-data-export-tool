@@ -1,5 +1,7 @@
 package com.example.e7tools.model;
-
+/**
+ * todo:需要优化类型
+ */
 public class Stat {
     private String type;
 

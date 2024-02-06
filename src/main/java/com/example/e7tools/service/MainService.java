@@ -24,6 +24,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+/**
+ * todo:代码需优化
+ */
 public class MainService {
     private Gson gson;
 

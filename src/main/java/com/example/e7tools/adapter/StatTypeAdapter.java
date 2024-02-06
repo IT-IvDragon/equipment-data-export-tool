@@ -5,6 +5,9 @@ import com.google.gson.*;
 
 import java.lang.reflect.Type;
 
+/**
+ * gson的解析适配器，java11版本起自定义的类解析会有点问题，暂时没找到比较简单的处理方法
+ */
 public class StatTypeAdapter implements JsonSerializer<Stat>, JsonDeserializer<Stat> {
     @Override
     public JsonElement serialize(Stat src, Type typeOfSrc, JsonSerializationContext context) {

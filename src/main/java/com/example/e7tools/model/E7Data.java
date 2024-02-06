@@ -1,5 +1,8 @@
 package com.example.e7tools.model;
 
+/**
+ * todo:类名最好改一下
+ */
 public class E7Data {
     private byte[] data;
     private Long seq;

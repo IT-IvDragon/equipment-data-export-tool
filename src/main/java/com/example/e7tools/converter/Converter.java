@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * todo:仅实现正常的功能，代码还需要优化
+ */
 public class Converter {
 
     private static Map<String, String> statByIngameStat = new HashMap<>();

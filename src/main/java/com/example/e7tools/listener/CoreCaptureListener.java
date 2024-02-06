@@ -9,7 +9,9 @@ import javax.xml.bind.DatatypeConverter;
 import java.io.ByteArrayOutputStream;
 import java.util.*;
 
-
+/**
+ * todo:仅实现正常的功能，代码还需要优化
+ */
 public class CoreCaptureListener implements PacketListener {
     public final Map<Long, List<E7Data>> ackData = new HashMap<>();
     public final List<String> finalBuffer = new ArrayList<>();

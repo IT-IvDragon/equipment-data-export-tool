@@ -28,6 +28,10 @@ import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 
 
+/**
+ * 主界面
+ * todo:仅实现功能，代码还需要精简优化
+ */
 public class MainController {
 
     @FXML
