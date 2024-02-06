@@ -190,6 +190,7 @@ public class MainController {
             return;
         }
         FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialFileName("gear");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("文本文件", "*.txt"));
         Stage stage = (Stage) exportFileBtn.getScene().getWindow();
         File file = fileChooser.showSaveDialog(stage);
@@ -200,6 +201,7 @@ public class MainController {
                 ex.printStackTrace();
             }
         }
+        statusBar.setText("导出完成");
     }
 
     /**
