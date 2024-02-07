@@ -2,7 +2,6 @@ module com.example.e7tools {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires org.kordamp.ikonli.javafx;
     requires org.pcap4j.core;
     requires java.xml.bind;
     requires com.google.gson;
