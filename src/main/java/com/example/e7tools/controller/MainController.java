@@ -161,20 +161,26 @@ public class MainController {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-
                 //处理数据
                 List<String> finalBuffer = pcapTool.getFinalBuffer();
                 //请求items
                 mainService.requestItems(finalBuffer);
                 //解析数据,获得等待导出的Map/json字符串
-                mainService.converterItems();
-
-                Platform.runLater(() -> {
-                    //更新ui
-                    startCaptureBtn.setDisable(false);
-                    statusBar.setText("数据处理完成，可以导出数据");
-                });
-
+                try {
+                    mainService.converterItems();
+                    Platform.runLater(() -> {
+                        //更新ui
+                        startCaptureBtn.setDisable(false);
+                        statusBar.setText("数据处理完成，可以导出数据");
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Platform.runLater(() -> {
+                        //更新ui
+                        startCaptureBtn.setDisable(false);
+                        statusBar.setText("数据处理异常，请重新操作。");
+                    });
+                }
             }).start();
 
         }
