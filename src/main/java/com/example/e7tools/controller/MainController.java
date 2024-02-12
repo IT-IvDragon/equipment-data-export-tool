@@ -77,7 +77,7 @@ public class MainController {
                 "name: {0}\n" +
                         "current_version: {1}\n" +
                         "latest_version: {2}\n" +
-                        "author: {3}\n", currentVersionMap.get("name"), currentVersionMap.get("version"), latestVersionMap.get("version"), "绿色恐龙");
+                        "author: {3}\n", latestVersionMap.get("name"), currentVersionMap.get("version"), latestVersionMap.get("version"), "绿色恐龙");
         about.setText(text);
         //超链接
         Hyperlink hyperlink = new Hyperlink("Gitee地址");
