@@ -12,52 +12,46 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0"
-            prefWidth="285.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.e7tools.controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e7tools.controller.MainController">
     <children>
         <VBox alignment="BOTTOM_LEFT" prefHeight="155.0" prefWidth="285.0">
             <children>
                 <MenuBar>
                     <menus>
-                        <Menu mnemonicParsing="false" text="帮助">
+                        <Menu mnemonicParsing="false" text="说明书">
                             <items>
-                                <MenuItem fx:id="menuAbout" mnemonicParsing="false" onAction="#onAboutMenuBtn"
-                                          text="关于"/>
+                                <MenuItem fx:id="menuAbout" mnemonicParsing="false" onAction="#onInstructionBook" text="使用说明" />
+                        <MenuItem fx:id="menuAbout1" mnemonicParsing="false" onAction="#onAboutMenuBtn" text="关于" />
                             </items>
                         </Menu>
                     </menus>
                 </MenuBar>
                 <VBox alignment="CENTER" prefHeight="119.0" prefWidth="285.0" spacing="20.0">
                     <padding>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
                     <HBox prefHeight="23.0" prefWidth="239.0">
                         <children>
 
-                            <Label fx:id="label" alignment="CENTER" prefHeight="25.0" prefWidth="67.0" text="选择网卡："
-                                   textAlignment="JUSTIFY"/>
-                            <ChoiceBox fx:id="networkDrive" prefHeight="23.0" prefWidth="173.0"/>
+                            <Label fx:id="label" alignment="CENTER" prefHeight="25.0" prefWidth="67.0" text="选择网卡：" textAlignment="JUSTIFY" />
+                            <ChoiceBox fx:id="networkDrive" prefHeight="23.0" prefWidth="173.0" />
                         </children>
                     </HBox>
                     <HBox prefHeight="25.0" prefWidth="239.0">
                         <children>
-                            <StackPane prefHeight="25.0" prefWidth="18.0"/>
-                            <Button fx:id="driveRefreshBtn" onAction="#onDriveRefreshButtonClick" text="刷新网卡"/>
-                            <StackPane prefHeight="25.0" prefWidth="6.0"/>
-                            <Button fx:id="startCaptureBtn" onAction="#onStartCapture" text="开始捕获"/>
-                            <StackPane prefHeight="25.0" prefWidth="6.0"/>
-                            <Button fx:id="exportFileBtn" onAction="#onExportFile" text="导出文件"/>
+                            <StackPane prefHeight="25.0" prefWidth="18.0" />
+                            <Button fx:id="driveRefreshBtn" onAction="#onDriveRefreshButtonClick" text="刷新网卡" />
+                            <StackPane prefHeight="25.0" prefWidth="6.0" />
+                            <Button fx:id="startCaptureBtn" onAction="#onStartCapture" text="开始捕获" />
+                            <StackPane prefHeight="25.0" prefWidth="6.0" />
+                            <Button fx:id="exportFileBtn" onAction="#onExportFile" text="导出文件" />
                         </children>
                     </HBox>
                 </VBox>
-                <HBox prefHeight="32.0" prefWidth="285.0"
-                      style="-fx-border-color: #b4b4b4 transparent transparent transparent;">
+                <HBox prefHeight="32.0" prefWidth="285.0" style="-fx-border-color: #b4b4b4 transparent transparent transparent;">
                     <children>
-                        <Label contentDisplay="RIGHT" prefHeight="18.0" prefWidth="46.0" style="-fx-label-padding: 2;"
-                               text="状态：" textFill="#7c7c7c"/>
-                        <Label fx:id="statusBar" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="249.0"
-                               style="-fx-label-padding: 2;" text="等待操作" textFill="#7c7c7c"/>
+                        <Label contentDisplay="RIGHT" prefHeight="18.0" prefWidth="46.0" style="-fx-label-padding: 2;" text="状态：" textFill="#7c7c7c" />
+                        <Label fx:id="statusBar" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="249.0" style="-fx-label-padding: 2;" text="等待操作" textFill="#7c7c7c" />
                     </children>
                 </HBox>
             </children>

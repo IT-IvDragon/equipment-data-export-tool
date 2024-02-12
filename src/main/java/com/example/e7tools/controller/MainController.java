@@ -238,4 +238,25 @@ public class MainController {
     public void setHostServices(HostServices hostServices) {
         this.hostServices = hostServices;
     }
+
+    /**
+     * 使用说明
+     */
+    public void onInstructionBook() {
+        //对话框
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle(UITextConstant.INSTRUCTION_BOOK);
+        alert.setHeaderText(null);
+        //对话框内容
+        Label about = new Label();
+        about.setText(UITextConstant.INSTRUCTION_BOOK1);
+        //超链接
+        Hyperlink hyperlink = new Hyperlink("怎么查看本机ip");
+        hyperlink.setOnAction(e -> {
+            hostServices.showDocument(UITextConstant.HOW_GET_IPV4);
+        });
+        alert.getDialogPane().setContent(new VBox(about, hyperlink));
+        //超链接
+        alert.showAndWait();
+    }
 }
