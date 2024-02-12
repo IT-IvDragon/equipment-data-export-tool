@@ -1,9 +1,21 @@
 # 战力导出工具
-功能描述：通过wpcap监听 tcp 5222 or port 3333 端口，获得登录时获取的装备数据，然后通过**配装器**([Fribbels Epic 7 Gear Optimizer](https://github.com/fribbels/Fribbels-Epic-7-Optimizer#rating-filters))里面的接口去解析，最后导出到文本。
+
+功能描述：通过wpcap监听 tcp 5222 or port 3333 端口，获得登录时获取的装备数据，然后通过**配装器
+**([Fribbels Epic 7 Gear Optimizer](https://github.com/fribbels/Fribbels-Epic-7-Optimizer#rating-filters))
+里面的接口去解析，最后导出到文本。
 
 说明：整个过程也是从配装器的python版本代码改造过来的，相当于是单独一个导出数据的功能。
 
 # 相关环境
+
 开发环境：java11、javafx、maven、
 
 抓包环境：wpcap(npcap)
+
+# 更新日志
+
+| 版本  | 内容                             | 日期         |     |     |     |
+|-----|--------------------------------|------------|-----|-----|-----|
+| 1.0 | 第一版                            | 2024-02-07 | --- | --- | --- |
+| 1.1 | 1、修复处理数据很久的bug<br/>2、添加文字版使用说明 | 2024-02-12 | --- | --- | --- |
+
