@@ -82,7 +82,7 @@ public class MainController {
         //超链接
         Hyperlink hyperlink = new Hyperlink("Gitee地址");
         hyperlink.setOnAction(e -> {
-            hostServices.showDocument(UITextConstant.GITEE_URL);
+            hostServices.showDocument(UITextConstant.GITHUB_URL);
         });
         alert.getDialogPane().setContent(new VBox(about, hyperlink));
         alert.showAndWait();

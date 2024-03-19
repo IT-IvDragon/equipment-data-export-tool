@@ -13,7 +13,7 @@ public class UITextConstant {
     public static final String ALERT_WARNING = "警告！！！";
     public static final String WPCAP_URL = "https://xulearn-1301624670.cos.ap-guangzhou.myqcloud.com/npcap-1.78.exe";
     public static final String VERSION_URL = "https://xulearn-1301624670.cos.ap-guangzhou.myqcloud.com/version.xml";
-    public static final String GITEE_URL = "https://gitee.com/Epic7-tool/equipment-data-export-tool";
+    public static final String GITHUB_URL = "https://github.com/IT-IvDragon/equipment-data-export-tool";
     public static final String ABOUT = "关于";
     public static final String INSTRUCTION_BOOK = "说明书";
     public static final String INSTRUCTION_BOOK1 = "1、点击`刷新网卡`获取网卡信息。\n" +
